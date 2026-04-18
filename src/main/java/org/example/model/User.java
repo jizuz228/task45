@@ -21,6 +21,11 @@ public class User {
     @Column(name = "mail", nullable = false, unique = true)
     private String mail;
 
+    public User(String login, String mail) {
+        this.login = login;
+        this.mail = mail;
+    }
+
     @Override
     public String toString() {
         return "id=" + id +
